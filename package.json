@@ -1,0 +1,29 @@
+{
+  "name": "gm-graphql-service",
+  "version": "1.0.0",
+  "description": "coolBoyz4lyfe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlaMurkan-FIFA-Boyz-2017-Dremz2Lyf/gm-graphql-service.git"
+  },
+  "author": "Scott Horn, Jimmy Stevenson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlaMurkan-FIFA-Boyz-2017-Dremz2Lyf/gm-graphql-service/issues"
+  },
+  "homepage": "https://github.com/AlaMurkan-FIFA-Boyz-2017-Dremz2Lyf/gm-graphql-service#readme",
+  "dependencies": {
+    "graphql": "^0.12.3",
+    "graphql-tools": "^2.19.0",
+    "serverless": "^1.25.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^3.16.0",
+    "serverless-webpack": "^4.2.0",
+    "webpack": "^3.10.0"
+  }
+}
