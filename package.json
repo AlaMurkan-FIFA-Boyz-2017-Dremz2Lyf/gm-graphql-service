@@ -4,7 +4,8 @@
   "description": "coolBoyz4lyfe",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "serverless deploy"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,11 @@
   "dependencies": {
     "graphql": "^0.12.3",
     "graphql-tools": "^2.19.0",
-    "serverless": "^1.25.0"
+    "serverless": "^1.25.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0"
   },
   "devDependencies": {
     "serverless-offline": "^3.16.0",

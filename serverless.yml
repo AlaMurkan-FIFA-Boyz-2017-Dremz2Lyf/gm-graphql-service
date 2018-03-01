@@ -1,8 +1,12 @@
-service: aws-nodejs # NOTE: update this with your service name
+service: gm-graphql
+
+plugins:
+  - serverless-webpack
 
 provider:
   name: aws
   runtime: nodejs6.10
+  profile: gm
 
 functions:
   hello:
@@ -11,14 +15,14 @@ functions:
 resources:
   Resources:
     playersTable:
-      Type: AWS::DynamoDB:Table
+      Type: AWS::DynamoDB::Table
       Properties:
         TableName: gm-players-table
         AttributeDefinitions:
           - AttributeName: id
             AttributeType: S
         KeySchema:
-          - AttibuteName: id
+          - AttributeName: id
             KeyType: HASH
         ProvisionedThroughput:
           ReadCapacityUnits: 1
